@@ -69,6 +69,10 @@ main {
 
 .col-down-quote {
   flex: 33%;
+  background-color: #502050;
+  color: #f7f2f7;
+  padding: 2.5rem 2rem;
+  border-radius: 0.5rem;
 }
 
 .col-up-left,
@@ -82,11 +86,54 @@ main {
   justify-content: space-between;
   height: 100%;
   padding: 0 7rem 0.5rem;
+  background: url("../images/bg-pattern-top-desktop.svg") no-repeat;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  background: url("../images/bg-pattern-bottom-desktop.svg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.description {
+  color: #937b92;
+  font-weight: 500;
+}
+
+.heading {
+  color: #502050;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.rating {
+  background-color: #f7f2f7;
+}
+.rating p {
+  color: #502050;
+  font-weight: 700;
 }
 
 .row-down,
 .row-up {
   display: flex;
+  gap: 2rem;
+}
+
+.status {
+  color: #ee68a4;
 }
 
 /*# sourceMappingURL=style.css.map */
