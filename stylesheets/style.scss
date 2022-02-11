@@ -6,10 +6,41 @@ $dark-grayish-magenta: hsl(303, 10%, 53%);
 $light-grayish-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  @include flex-column();
+  margin: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.col-down-quote {
+  flex: 33%;
+}
+
+.col-up-left,
+.col-up-right {
+  flex: 50%;
+}
+
+.container {
+  @include flex-column();
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 7rem 0.5rem;
+}
+
+.row-down,
+.row-up {
+  display: flex;
 }
