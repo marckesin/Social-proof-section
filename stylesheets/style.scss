@@ -14,6 +14,7 @@ $white: hsl(0, 0%, 100%);
 main {
   @include flex-column();
   margin: auto;
+  gap: 4rem;
 }
 
 .attribution {
@@ -25,11 +26,26 @@ main {
 }
 
 .col-down-quote {
-  flex: 33%;
   background-color: $very-dark-magenta;
   color: $light-grayish-magenta;
   padding: 2.5rem 2rem;
   border-radius: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.col-down-quote:nth-child(2) {
+  position: relative;
+  top: 1rem;
+}
+
+.col-down-quote:nth-child(3) {
+  position: relative;
+  top: 2rem;
+}
+
+.col-up-left {
+  padding: 0 5rem 0 0;
 }
 
 .col-up-left,
@@ -41,7 +57,7 @@ main {
   @include flex-column();
   justify-content: space-between;
   height: 100%;
-  padding: 0 7rem 0.5rem;
+  padding: 0 8rem 0.5rem;
   background: url("../images/bg-pattern-top-desktop.svg") no-repeat;
   position: relative;
 }
@@ -68,19 +84,35 @@ main {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
-}
-
-.name {
-  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .rating {
   background-color: $light-grayish-magenta;
+  width: 85%;
+  margin-bottom: 1rem;
+  height: 3.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
+
+  img {
+    display: inline-block;
+    margin: auto 0.1rem;
+  }
 
   p {
     color: $very-dark-magenta;
     font-weight: 700;
+    display: inline-block;
   }
+}
+
+.rating:nth-child(2) {
+  margin: 0 auto 1rem;
+}
+
+.rating:nth-child(3) {
+  margin-left: auto;
 }
 
 .row-down,
@@ -89,6 +121,21 @@ main {
   gap: 2rem;
 }
 
-.status {
-  color: $soft-pink;
+.user {
+  display: flex;
+  margin-bottom: 2rem;
+
+  img {
+    border-radius: 50%;
+    width: 3rem;
+  }
+
+  .name {
+    font-weight: 500;
+    margin-left: 1.5rem;
+
+    span {
+      color: $soft-pink;
+    }
+  }
 }
