@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/marckesin/social-proof-section/badge)](https://www.codefactor.io/repository/github/marckesin/social-proof-section) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white)
+
 # Frontend Mentor - Social proof section solution
 
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -43,5 +45,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@marckesin](https://www.frontendmentor.io/profile/marckesin)
-- Linkedin - [marckesin](https://www.linkedin.com/in/marckesin)
-- Codewars - [marckesin](https://www.codewars.com/users/marckesin)
+- ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat&logo=linkedin&logoColor=white) - [marckesin](https://www.linkedin.com/in/marckesin)
+- ![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=flat&logo=codewars&logoColor=grey) - [marckesin](https://www.codewars.com/users/marckesin)
